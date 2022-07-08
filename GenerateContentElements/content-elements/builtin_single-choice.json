@@ -1,0 +1,56 @@
+[
+  {
+    "id": "builtin_single-choice-wQot0T",
+    "formData": {
+      "dropdownPlaceholder$en": "Select...",
+      "choices$en": [
+        {
+          "title": "Dropdown",
+          "value": "dropdown"
+        },
+        {
+          "title": "Text",
+          "value": "text"
+        },
+        {
+          "title": "Card",
+          "value": "card"
+        },
+        {
+          "title": "Carousel",
+          "value": "carousel"
+        }
+      ],
+      "markdown$en": true,
+      "disableFreeText$en": false,
+      "typing$en": true,
+      "text$en": "What should we generate?"
+    },
+    "createdBy": "admin",
+    "createdOn": "2022-06-10T17:18:52.053Z",
+    "modifiedOn": "2022-06-10T17:42:59.297Z"
+  },
+  {
+    "id": "builtin_single-choice-_S2d8U",
+    "formData": {
+      "dropdownPlaceholder$en": "Select...",
+      "choices$en": [
+        {
+          "title": "Create a content-element",
+          "value": "create"
+        },
+        {
+          "title": "Edit a content-element",
+          "value": "edit"
+        }
+      ],
+      "markdown$en": true,
+      "disableFreeText$en": false,
+      "typing$en": true,
+      "text$en": "What do you want to do?"
+    },
+    "createdBy": "admin",
+    "createdOn": "2022-06-27T13:21:15.988Z",
+    "modifiedOn": "2022-06-27T13:21:15.988Z"
+  }
+]

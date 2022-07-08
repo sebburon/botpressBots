@@ -1,0 +1,167 @@
+{
+  "nodes": [
+    {
+      "id": "entry",
+      "position": {
+        "x": -240,
+        "y": -350
+      }
+    },
+    {
+      "id": "2b6b5359a4",
+      "position": {
+        "x": -235,
+        "y": -85
+      }
+    },
+    {
+      "id": "skill-cd3fcd",
+      "position": {
+        "x": -585,
+        "y": -235
+      }
+    },
+    {
+      "id": "e0bfda0024",
+      "position": {
+        "x": -240,
+        "y": -215
+      }
+    },
+    {
+      "id": "0b72a9ff03",
+      "position": {
+        "x": -235,
+        "y": 10
+      }
+    },
+    {
+      "id": "skill-fcbd2d",
+      "position": {
+        "x": -850,
+        "y": -120
+      }
+    },
+    {
+      "id": "skill-32bbaa",
+      "position": {
+        "x": -590,
+        "y": 60
+      }
+    },
+    {
+      "id": "33ee060ab1",
+      "position": {
+        "x": -235,
+        "y": 145
+      }
+    }
+  ],
+  "links": [
+    {
+      "source": "skill-32bbaa",
+      "sourcePort": "out1",
+      "target": "33ee060ab1",
+      "points": [
+        {
+          "x": -390,
+          "y": 134
+        },
+        {
+          "x": -234,
+          "y": 162
+        }
+      ]
+    },
+    {
+      "source": "skill-cd3fcd",
+      "sourcePort": "out3",
+      "target": "0b72a9ff03",
+      "points": [
+        {
+          "x": -385,
+          "y": -102
+        },
+        {
+          "x": -234,
+          "y": 28
+        }
+      ]
+    },
+    {
+      "source": "skill-cd3fcd",
+      "sourcePort": "out2",
+      "target": "2b6b5359a4",
+      "points": [
+        {
+          "x": -385,
+          "y": -131
+        },
+        {
+          "x": -234,
+          "y": -68
+        }
+      ]
+    },
+    {
+      "source": "skill-cd3fcd",
+      "sourcePort": "out1",
+      "target": "e0bfda0024",
+      "points": [
+        {
+          "x": -385,
+          "y": -161
+        },
+        {
+          "x": -239,
+          "y": -197
+        }
+      ]
+    },
+    {
+      "source": "skill-cd3fcd",
+      "sourcePort": "out0",
+      "target": "entry",
+      "points": [
+        {
+          "x": -385,
+          "y": -191
+        },
+        {
+          "x": -239,
+          "y": -332
+        }
+      ]
+    },
+    {
+      "source": "skill-fcbd2d",
+      "sourcePort": "out1",
+      "target": "skill-32bbaa",
+      "points": [
+        {
+          "x": -650,
+          "y": -46
+        },
+        {
+          "x": -589,
+          "y": 78
+        }
+      ]
+    },
+    {
+      "source": "skill-fcbd2d",
+      "sourcePort": "out0",
+      "target": "skill-cd3fcd",
+      "points": [
+        {
+          "x": -650,
+          "y": -77
+        },
+        {
+          "x": -584,
+          "y": -218
+        }
+      ]
+    }
+  ]
+}

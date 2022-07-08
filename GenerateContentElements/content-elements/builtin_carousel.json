@@ -1,0 +1,24 @@
+[
+  {
+    "id": "builtin_carousel-EW3meg",
+    "formData": {
+      "typing$en": true,
+      "items$en": [
+        {
+          "title": "apple",
+          "subtitle": "Apple Computer",
+          "actions": [
+            {
+              "action": "Say something",
+              "title": "Learn More",
+              "text": "Apple Inc. is an American multinational technology company that specializes in consumer electronics, software and online services headquartered in Cupertino"
+            }
+          ]
+        }
+      ]
+    },
+    "createdBy": "admin",
+    "createdOn": "2022-06-10T17:38:58.600Z",
+    "modifiedOn": "2022-06-10T17:38:58.600Z"
+  }
+]

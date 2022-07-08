@@ -1,0 +1,157 @@
+{
+  "version": "0.0.1",
+  "catchAll": {
+    "onReceive": [],
+    "next": []
+  },
+  "startNode": "choice-fcbd2d",
+  "nodes": [
+    {
+      "id": "entry",
+      "name": "entry",
+      "next": [],
+      "onEnter": [
+        "renderDropdown {\"name\":\"\",\"value\":\"\"}"
+      ],
+      "onReceive": null
+    },
+    {
+      "id": "2b6b5359a4",
+      "name": "node-2a17",
+      "next": [],
+      "onEnter": [
+        "renderCard {\"name\":\"\",\"value\":\"\"}"
+      ],
+      "onReceive": null,
+      "type": "standard"
+    },
+    {
+      "id": "skill-cd3fcd",
+      "type": "skill-call",
+      "skill": "choice",
+      "name": "choice-cd3fcd",
+      "flow": "skills/choice-cd3fcd.flow.json",
+      "next": [
+        {
+          "caption": "User picked [dropdown]",
+          "condition": "temp['skill-choice-ret-m4lcxby7pa'] == \"dropdown\"",
+          "node": "entry"
+        },
+        {
+          "caption": "User picked [text]",
+          "condition": "temp['skill-choice-ret-m4lcxby7pa'] == \"text\"",
+          "node": "node-c567"
+        },
+        {
+          "caption": "User picked [card]",
+          "condition": "temp['skill-choice-ret-m4lcxby7pa'] == \"card\"",
+          "node": "node-2a17"
+        },
+        {
+          "caption": "User picked [carousel]",
+          "condition": "temp['skill-choice-ret-m4lcxby7pa'] == \"carousel\"",
+          "node": "node-1645"
+        },
+        {
+          "caption": "On failure",
+          "condition": "true",
+          "node": ""
+        }
+      ],
+      "onEnter": null,
+      "onReceive": null
+    },
+    {
+      "id": "e0bfda0024",
+      "name": "node-c567",
+      "next": [],
+      "onEnter": [
+        "renderText {}"
+      ],
+      "onReceive": null,
+      "type": "standard"
+    },
+    {
+      "id": "0b72a9ff03",
+      "name": "node-1645",
+      "next": [],
+      "onEnter": [
+        "renderCarousel {}"
+      ],
+      "onReceive": null,
+      "type": "standard"
+    },
+    {
+      "id": "skill-fcbd2d",
+      "type": "skill-call",
+      "skill": "choice",
+      "name": "choice-fcbd2d",
+      "flow": "skills/choice-fcbd2d.flow.json",
+      "next": [
+        {
+          "caption": "User picked [create]",
+          "condition": "temp['skill-choice-ret-tbcv9vcney'] == \"create\"",
+          "node": "choice-cd3fcd"
+        },
+        {
+          "caption": "User picked [edit]",
+          "condition": "temp['skill-choice-ret-tbcv9vcney'] == \"edit\"",
+          "node": "choice-cd3fcd-copy"
+        },
+        {
+          "caption": "On failure",
+          "condition": "true",
+          "node": ""
+        }
+      ],
+      "onEnter": null,
+      "onReceive": null
+    },
+    {
+      "id": "skill-32bbaa",
+      "type": "skill-call",
+      "skill": "choice",
+      "name": "choice-cd3fcd-copy",
+      "flow": "skills/choice-32bbaa.flow.json",
+      "next": [
+        {
+          "caption": "User picked [dropdown]",
+          "condition": "temp['skill-choice-ret-kpniDUO-o2'] == \"dropdown\"",
+          "node": ""
+        },
+        {
+          "caption": "User picked [text]",
+          "condition": "temp['skill-choice-ret-kpniDUO-o2'] == \"text\"",
+          "node": "node-7aba"
+        },
+        {
+          "caption": "User picked [card]",
+          "condition": "temp['skill-choice-ret-kpniDUO-o2'] == \"card\"",
+          "node": ""
+        },
+        {
+          "caption": "User picked [carousel]",
+          "condition": "temp['skill-choice-ret-kpniDUO-o2'] == \"carousel\"",
+          "node": ""
+        },
+        {
+          "caption": "On failure",
+          "condition": "true",
+          "node": ""
+        }
+      ],
+      "onEnter": null,
+      "onReceive": null
+    },
+    {
+      "id": "33ee060ab1",
+      "name": "node-7aba",
+      "next": [],
+      "onEnter": [
+        "editText {\"name\":\"\",\"value\":\"\"}"
+      ],
+      "onReceive": null,
+      "type": "standard"
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+[
+  {
+    "id": "builtin_text-OHhiTL",
+    "formData": {
+      "text": "Hi, I am built using Botpress.",
+      "typing": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2022-06-27T13:17:52.068Z",
+    "modifiedOn": "2022-06-28T13:12:04.874Z"
+  },
+  {
+    "id": "#!builtin_text-OHhiTL",
+    "formData": {
+      "text": "This is a new text element",
+      "typing": true,
+      "text$en": "This is a new text element",
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2022-06-27T13:22:13.202Z",
+    "modifiedOn": "2022-06-28T11:52:58.311Z"
+  }
+]

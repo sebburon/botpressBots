@@ -1,0 +1,105 @@
+{
+  "version": "0.0.1",
+  "catchAll": {
+    "next": []
+  },
+  "startNode": "entry",
+  "skillData": {
+    "randomId": "m4lcxby7pa",
+    "contentId": "builtin_single-choice-wQot0T",
+    "invalidContentId": "",
+    "keywords": {
+      "dropdown": [
+        "dropdown",
+        "Dropdown"
+      ],
+      "text": [
+        "text",
+        "Text"
+      ],
+      "card": [
+        "card",
+        "Card"
+      ],
+      "carousel": [
+        "carousel",
+        "Carousel"
+      ]
+    },
+    "config": {
+      "nbMaxRetries": 3,
+      "repeatChoicesOnInvalid": false,
+      "variableName": ""
+    }
+  },
+  "nodes": [
+    {
+      "name": "entry",
+      "onEnter": [
+        "say #!builtin_single-choice-wQot0T {\"skill\":\"choice\"}"
+      ],
+      "next": [
+        {
+          "condition": "true",
+          "node": "parse"
+        }
+      ],
+      "id": "372388"
+    },
+    {
+      "name": "parse",
+      "onReceive": [
+        "basic-skills/choice_parse_answer {\"randomId\":\"m4lcxby7pa\",\"contentId\":\"builtin_single-choice-wQot0T\",\"invalidContentId\":\"\",\"keywords\":{\"dropdown\":[\"dropdown\",\"Dropdown\"],\"text\":[\"text\",\"Text\"],\"card\":[\"card\",\"Card\"],\"carousel\":[\"carousel\",\"Carousel\"]},\"config\":{\"nbMaxRetries\":3,\"repeatChoicesOnInvalid\":false,\"variableName\":\"\"}}"
+      ],
+      "next": [
+        {
+          "condition": "temp['skill-choice-valid-m4lcxby7pa'] === true",
+          "node": "#"
+        },
+        {
+          "condition": "true",
+          "node": "invalid"
+        }
+      ],
+      "triggers": [
+        {
+          "conditions": [
+            {
+              "id": "always"
+            }
+          ]
+        }
+      ],
+      "onEnter": [],
+      "id": "367588"
+    },
+    {
+      "name": "invalid",
+      "onEnter": [
+        "basic-skills/choice_invalid_answer {\"randomId\":\"m4lcxby7pa\"}"
+      ],
+      "next": [
+        {
+          "condition": "Number(temp['skill-choice-invalid-count-m4lcxby7pa']) > Number(3)",
+          "node": "#"
+        },
+        {
+          "condition": "true",
+          "node": "sorry"
+        }
+      ],
+      "id": "622036"
+    },
+    {
+      "name": "sorry",
+      "onEnter": [],
+      "next": [
+        {
+          "condition": "true",
+          "node": "parse"
+        }
+      ],
+      "id": "624925"
+    }
+  ]
+}
